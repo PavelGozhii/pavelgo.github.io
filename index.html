@@ -1,32 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>John Doe</h1>
-        <p>Web Developer | Designer | Creator</p>
-    </header>
-    <main>
-        <section>
-            <h2>About Me</h2>
-            <p>I’m a passionate web developer with a love for building cool things.</p>
-        </section>
-        <section>
-            <h2>Projects</h2>
-            <ul>
-                <li><a href="#">Project One</a></li>
-                <li><a href="#">Project Two</a></li>
-            </ul>
-        </section>
-        <section>
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
-        </section>
-    </main>
+
+<!-- HEADER -->
+<header>
+    <nav>
+        <h1 class="logo">John Doe</h1>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="hero">
+        <h2>Hello, I'm <span>John Doe</span></h2>
+        <p>Web Developer | Designer | Problem Solver</p>
+        <a href="#projects" class="btn">See My Work</a>
+    </div>
+</header>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        I’m a passionate web developer who loves creating modern, responsive, and user-friendly websites.
+        My goal is to craft experiences that make people's lives easier and more enjoyable.
+    </p>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+        <div class="project-card">
+            <h3>Portfolio Website</h3>
+            <p>A responsive personal portfolio website built with HTML, CSS, and JavaScript.</p>
+            <a href="#" target="_blank">View Project</a>
+        </div>
+        <div class="project-card">
+            <h3>Weather App</h3>
+            <p>A weather forecast application using OpenWeather API and vanilla JavaScript.</p>
+            <a href="#" target="_blank">View Project</a>
+        </div>
+        <div class="project-card">
+            <h3>Task Manager</h3>
+            <p>A task management app to boost productivity, built with React.</p>
+            <a href="#" target="_blank">View Project</a>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Let's work together! Reach me via email:</p>
+    <a href="mailto:you@example.com" class="btn">Email Me</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2025 John Doe. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
